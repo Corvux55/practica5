@@ -1,7 +1,19 @@
 TEMPLATE = app
-CONFIG += console c++17
+CONFIG += c++17
+
 CONFIG -= app_bundle
-CONFIG -= qt
+QT += core gui widgets charts
 
 SOURCES += \
-        main.cpp
+    main.cpp \
+    obstaculo.cpp \
+    particula.cpp \
+    simulacion.cpp
+
+HEADERS += \
+    obstaculo.h \
+    particula.h \
+    simulacion.h
+
+DISTFILES += \
+    data/salida.csv
